@@ -1,0 +1,87 @@
+.gameCard{
+    width: 200px;
+    margin: 7px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+    background-color: white;
+    
+}
+
+
+.gameCard_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.gameCard_top > img {
+    width: 25px;
+    height: 25px;
+    
+}
+
+.gameCard_bottom{
+    width: 95%;
+    text-align: center;
+}
+
+.gameCard_desc{
+    position:absolute; 
+    width: 200px;
+    min-height: 150px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 5px -2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.gameCard_desc > p{
+    width: 95%; 
+    text-align: center;
+}
+
+
+
+.gameCard_desc > div > .MuiSvgIcon-root:hover{
+    color:var(--green-light);
+    cursor : pointer; 
+
+}
+
+.deleteButton > .MuiSvgIcon-root {
+    font-size: 16px;
+}
+
+.deleteButton > .MuiSvgIcon-root:hover {
+    color:var(--green-light);
+    cursor : pointer; 
+}
+
+.gameCard_bottom >div > .MuiSvgIcon-root:hover{
+    cursor : pointer; 
+    color:var(--green-light);
+}
+
+.deleteButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2px;
+    width: 85%;
+}
+
+.deleteButton:hover{
+    cursor: pointer;
+}

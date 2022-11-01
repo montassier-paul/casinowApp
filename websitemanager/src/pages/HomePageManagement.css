@@ -1,0 +1,73 @@
+.homePageManagement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.conditionsPageManagement > h2 {
+    color : var(--green-dunkel)
+}
+
+.homePageManagement> button {
+ 
+    align-self: center;
+
+}
+
+
+.homePageBand{
+
+    width: 80%;
+    min-height: 150px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    margin-top: 20px;
+    margin-bottom : 20px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: solid rgb(227, 252, 236) 1px;
+    position: relative;
+    
+}
+
+.homePageBand_newImage{
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.homePageBand > textarea {
+    
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px;
+    border-color: var(--green-light);
+    outline-color: var(--green-dunkel);
+}
+
+
+.homePageBand > select {
+    outline-color:  var(--green-dunkel);
+}
+
+.homePageBand__delete{
+    position: absolute;
+    right: 0;
+    top : 10px; 
+}
+
+.homePageBand__delete:hover{
+    cursor: pointer;
+    color:var(--green-dunkel) ;   
+}

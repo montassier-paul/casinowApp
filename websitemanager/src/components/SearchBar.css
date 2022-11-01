@@ -1,0 +1,14 @@
+.searchBar > input{
+    background-color: transparent;
+    border: none;   
+    border-bottom: solid var(--green-light);
+    width: 250px;
+    height: 30px;
+    font-size: 12px;
+    outline: none;
+}
+
+
+.searchBar > input ::placeholder :focus{
+    content: '';
+}

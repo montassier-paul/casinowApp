@@ -1,0 +1,118 @@
+.casinosImagesComponent{
+    width: 100%;
+    height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.casinosImagesComponent_smallScreen{
+    width: 100%;
+    height:900px;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.casinosImagesComponent_body{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+}
+
+
+.casinosImagesComponent_body_smallScreen{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+
+.casinosImagesComponent_newImage{
+    flex : 0.3; 
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    max-height: 400px;
+    min-height: 400px;
+}
+
+
+.casinosImagesComponent_imagesList{
+    flex : 0.6;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 400px;
+    max-height: 400px;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.newImage_dragAndDrop > input{
+    display: none;
+}
+
+.newImage_dragAndDrop > input:hover{
+    cursor: pointer;
+}
+
+.newImage_dragAndDrop{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    border : dotted var(--green-light) 2px;
+    border-radius: 25px; 
+    text-align:center; 
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.newImage_dragAndDrop:hover{
+    cursor: pointer;
+    border : dotted var(--green-dunkel); 
+}
+
+.newImageCard {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+}
+
+
+.newImageCard > img{
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 20px;
+}
+
+.newImageCard > div{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}

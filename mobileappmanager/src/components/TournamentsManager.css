@@ -1,0 +1,102 @@
+.main-manager-tournaments{
+    margin-top: 20px;
+    width: 95%;
+    margin-bottom: 50px;
+    align-self: center;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.tournaments-manager-title{
+    text-align: center;
+}
+
+.tournaments-manager{
+    display: flex;
+    flex-direction: row;
+}
+
+.new-tournament-form{
+    width: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.tournaments-gallerie{
+    height: 300px; 
+    width:70%; 
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.add-tournament{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0.2);
+}
+
+.tournament-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0.2);
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+
+.tournament-card{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
+    margin: 2px;
+    border-radius: 10px;
+}
+
+
+.input-field-tournament-manager{
+    border: 0;
+    width: 55%;
+}
+
+
+.new-tournament-button{
+    margin-top: 5px;
+    color: #9C07D0;
+}
+
+.hours-field-tournament-manager{
+    align-self: center;
+    border: 0;
+    margin-left: 5px;
+}
+
+
+
+.delete-button-tournament-manager{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #9C07D0 ;
+}
+
+
+.tournament-dropdown{
+    border : 0
+}
+

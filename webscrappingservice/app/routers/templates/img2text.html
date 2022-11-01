@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Dashboard scrapping</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div class="main">
+        <!--Dashboard to test scrapping api -->
+
+
+        <!--Header -->
+
+        {% include 'header.html' %}
+
+
+        <!-- image to text -->
+
+        <div class="container">
+            <div class="container__left">
+                <h3>Get text from image</h3>
+                <form class="img2text__form">
+                    <label for="img2text__input">Charger une image : </label>
+                    <input type="file" class="img2text__input" name="img2text__input" accept="image/png, image/jpeg"
+                        required />
+                    <input type="submit" value="Extraire le texte de l'image">
+                </form>
+
+                <label for="model-select" style="margin-top:10px">Choose a model:</label>
+
+                <div>
+
+                    <select name="models" id="model-select" style="margin-top:10px">
+                        <option value="easyOcr">easyOcr</option>
+                        <option value="pytesseract">pytesseract</option>
+                        <option value="east">east</option>
+                        
+                    </select>
+
+                    <button class="img2text__clear" style="margin-left: 10px;">
+                        Clear
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="container__right">
+
+                <canvas>
+                    Désolé, votre navigateur ne prend pas en charge canvas.
+                </canvas>
+                <div class="img2text__loader" style="display: none">
+                    <div style="display : flex ; flex-direction: column; align-items: center;">
+                        <div class="loader"></div>
+                        Le chargement peut prendre un peu de temps
+                    </div>
+                </div>
+
+                <p class="img2text__failed" style="color : red; display : none">Request failed. Try again. Check the url
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <!--Footer-->
+
+        {% include 'footer.html' %}
+
+    </div>
+
+    <script src="{{ url_for('static',path='/img2textScripts.js') }}"></script>
+
+</body>
+
+</html>

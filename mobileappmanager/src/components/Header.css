@@ -1,0 +1,44 @@
+.header-main{
+    width:100%;
+    position: fixed;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content:space-between;
+    background-color:#FCEFFA;
+    height: 64px;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0.2);
+}
+
+.header-titles-container{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+
+.casino-name{
+    font-size:larger;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.casino-adresse{
+    font-size:14px;
+    font-weight:normal;
+    margin-bottom: 10px;
+}
+
+.button-disconnect-header{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    background-color:#FCEFFA;
+    border : 0; 
+    height: 90%;
+}
+
+.button-disconnect-header:hover{
+    cursor: pointer;
+    scale: 120%;
+}

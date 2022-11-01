@@ -1,0 +1,50 @@
+.conditionsPageManagement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.conditionsPageManagement > h2 {
+    color : var(--green-dunkel)
+}
+
+
+.wrapper-class {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.editor-class {
+    background-color: lightgray;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    overflow: auto;
+    height: 500px;
+}
+
+.toolbar-class {
+    border: 1px solid #ccc;
+}
+
+
+.preview {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 70%;
+    max-width: 70%;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
+    overflow: auto;
+  }
+
+.conditionsPageManagement__button{
+    top : 110px; 
+    right : 30%; 
+    position: fixed;
+    z-index: 10;
+}

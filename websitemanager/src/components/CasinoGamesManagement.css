@@ -1,0 +1,103 @@
+.casinoGamesManagement{
+    width: 100%;
+    max-height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.casinoGamesManagement_smallScreen{
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    height:900px;
+}
+
+
+.casinoGamesManagement_body{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+}
+
+.casinoGamesManagement_body_smallScreen{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 20px;
+    flex-direction:column; 
+
+}
+
+
+.casinoGamesManagement_newGame{
+    flex : 0.3; 
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
+.casinoGamesManagement_gamesList{
+    flex : 0.6;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 400px;
+    height: 400px;
+    position: relative;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+
+.casinoGamesManagement_newGame > input {
+    width: 80%;
+    height: 25px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: solid #d3f7e5;
+    outline: 0;
+}
+
+.casinoGamesManagement_newGame > input:focus {
+    border-bottom: solid var(--green-dunkel);
+
+}
+
+
+.casinoGamesManagement_newGame > textarea{
+    border-radius: 5px;
+    width: 80%;
+    padding: 5px;
+    outline-color:var(--green-dunkel);
+    resize: none;
+    margin-bottom: 15px;
+}
+
+
+
+.casinoGamesManagement_newGame > select{
+    border : none; 
+    outline: 0;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+
+}
+
+

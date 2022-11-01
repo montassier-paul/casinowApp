@@ -1,0 +1,7 @@
+app/__main__.py
+app/*.jpg
+app/*.png
+app/json_data.json
+.env
+app/utils/chromedriver
+app/utils/tesseract

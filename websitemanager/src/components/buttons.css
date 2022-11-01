@@ -1,0 +1,18 @@
+.button_DUC{
+    color :red; 
+    width: 100px;
+    height: 40px;
+    align-self: flex-end;
+    border-radius: 5px;
+    border : none; 
+    background-color: #d3f7e5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -2px;
+    opacity: 70%;
+    margin-left: 20px;
+    
+}
+
+.button_DUC:hover{
+    opacity: 100%;
+    cursor: pointer;
+}

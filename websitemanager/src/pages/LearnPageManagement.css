@@ -1,0 +1,96 @@
+.learnPageManagement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+
+.learnPageManagement > h2 {
+    color : var(--green-dunkel)
+}
+
+
+.learnSelectBar{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.learnSelectBar > div {
+    height: 90%;
+    min-width: 100px;
+    border-right: solid 1px var(--green-dunkel);
+    border-bottom: solid 1px var(--green-dunkel);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.learnSelectBar > div:hover{
+
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.learnEditor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.learnEditor > h2{
+
+    color : var(--green-dunkel)
+
+}
+
+.learnEditor > label > input {
+    margin-left: 10px;
+    width: 390px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: solid #d3f7e5;
+    outline: 0;
+}
+
+.learnEditor > label > input:hover{
+    border-bottom: solid var(--green-dunkel);
+}
+
+.editor {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    cursor: text;
+    padding: 16px;
+    border-radius: 2px;
+    margin-bottom: 2em;
+    box-shadow: inset 0px 1px 8px -3px #ABABAB;
+    background: #fefefe;
+  }
+  
+.editor :global(.public-DraftEditor-content) {
+min-height: 140px;
+}
+
+.options {
+margin-bottom: 20px;
+}

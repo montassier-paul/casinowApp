@@ -1,0 +1,80 @@
+
+.casino-form{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-content:space-around;
+    height: 350px;
+      
+}
+
+
+.casino-form-small-screen{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-content:space-around;
+      
+}
+
+
+.main-casino-manager{
+    width: 95%;
+    align-self: center;
+    margin-top: 80px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #FFFFFF; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+
+}
+
+.casino-title{
+    text-align: center;
+
+}
+
+
+.casino-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0.2);
+    width: 400px;
+    margin-bottom: 5px;
+}
+
+.input-field-casino-manager{
+    border: 0;
+    width: 70%;
+}
+
+
+.casino-input-hours{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0.2);
+    width: 400px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+
+.hours-field-casino-manager{
+    align-self: center;
+    border: 0;
+    margin-left: 5px;
+}
+
+.update-button-casino-manager{
+    color: #9C07D0;
+}
+
+
+

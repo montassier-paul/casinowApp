@@ -1,0 +1,43 @@
+.home{
+ 
+    padding-top: 50px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+.parallax__textContainer{
+    background-color: #3DB87C;
+    color : white; 
+    padding: 10px;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    text-align: justify;
+    transform: translate(-50%,-50%)
+}
+
+.parallaxTwo__textContainer{
+    background-color: #3DB87C;
+    color : white; 
+    padding: 10px;
+    font-weight: 600;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    text-align: justify;
+}
+
+.parallaxThree__textContainer{
+    background-color: #3DB87C;
+    color : white; 
+    padding: 10px;
+    max-width: 400px;
+    position: absolute;
+    font-weight: 600;
+    top: 50%;
+    left: 20%;
+    text-align: justify;
+    transform: translate(-50%,-50%)
+}

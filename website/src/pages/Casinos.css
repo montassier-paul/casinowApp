@@ -1,0 +1,38 @@
+.casinos{
+    min-height: 100vh;
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.casinos__searchBar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: space-evenly;
+    width: 50%;
+    align-self: flex-start;
+    /* margin-bottom: 20px; */
+}
+
+
+
+.casinos__list{
+    columns: 5 250px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 20px auto;
+    min-height: 400px;
+    
+    
+}
+
+
+.casinoPage_infoContainer > div > h4 {
+
+    width: 100%;
+    margin-left: 20px;
+
+}

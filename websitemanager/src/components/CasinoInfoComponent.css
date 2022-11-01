@@ -1,0 +1,106 @@
+.casinoInfoComponent{
+    width: 100%;
+    max-height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.casinoInfoComponent_mediumScreen{
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    max-height: 580px;
+}
+
+.casinoInfoComponent_smallScreen{
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 5px 13px 27px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.casinoInfoComponent_body{
+    width: 95%;
+    max-height: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: center;
+}
+
+
+.casinoInfoComponent_body > input[type=text]{
+    width: 390px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: solid #d3f7e5;
+    outline: 0;
+}
+
+.casinoInfoComponent_body >label> input[type=number]{
+    width: 190px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: solid #d3f7e5;
+    outline: 0;
+}
+
+.casinoInfoComponent_body > input[type=text]:focus, input[type=number]:focus {
+    border-bottom: solid var(--green-dunkel);
+
+}
+
+.casinoInfoComponent_body > textarea{
+    border-radius: 5px;
+    width: 390px;
+    padding: 5px;
+    outline-color:var(--green-dunkel);
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.casinoInfoComponent_body > button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.casinoInfoComponent_body > label{
+    display: flex; 
+    justify-content: space-between; 
+    vertical-align:middle;
+    width: 390px;
+    margin-bottom: 10px;
+
+}
+
+.casinoInfoComponent_body > label > p {
+    flex : 0.33; 
+    margin: 0;
+}
+
+
+.casinoInfoComponent_time_input{
+    border : none;
+    outline: 0;
+
+    
+}
+
+.casinoInfoComponent_time_input:focus{
+    color : var(--green-dunkel); 
+}

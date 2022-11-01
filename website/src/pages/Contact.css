@@ -1,0 +1,53 @@
+.contact{
+    min-height: 100vh;
+    padding-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__container{
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+.contact__container>form>input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    outline: none;
+  }
+
+.contact__container>form>input[type=text]:focus, textarea:focus {
+border-color: #3DB87C;
+}
+  
+/* Style the submit button with a specific background color etc */
+.contact__container>form>input[type=submit] {
+background-color: #d3f7e5;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+  
+/* When moving the mouse over the submit button, add a darker green color */
+.contact__container>form>input[type=submit]:hover {
+background-color: #3DB87C;
+}
+  
+
+
+
+

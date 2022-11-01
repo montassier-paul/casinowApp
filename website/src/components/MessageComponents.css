@@ -1,0 +1,81 @@
+.messageCard{
+
+    width: 500px;
+    /* border-radius: 10px; */
+    margin: 15px;
+    /* background-color: white; */
+    border-bottom: solid gray 1px;
+
+
+}
+
+.messageCard_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.messageCard_header>h5{
+    color : #3DB87C; 
+    margin-right: 5px;
+}
+
+.messageCard_header>p{
+    font-size: 10px;
+}
+
+.newMessageForm{
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.newMessageForm>h4{
+    width: 100%;
+    text-align: center;
+}
+
+.newMessageForm>form{
+
+    width: 600px;
+    min-height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.newMessageForm>form>input[type=text],input[type=email], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    outline: none;
+  }
+
+.newMessageForm>form>input[type=text]:focus,input[type=email]:focus, textarea:focus {
+border-color: #3DB87C;
+}
+  
+/* Style the submit button with a specific background color etc */
+.newMessageForm>form>input[type=submit] {
+background-color: #d3f7e5;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+width: 150px;
+align-self: center;
+}
+  
+/* When moving the mouse over the submit button, add a darker green color */
+.newMessageForm>form>input[type=submit]:hover {
+background-color: #3DB87C;
+}

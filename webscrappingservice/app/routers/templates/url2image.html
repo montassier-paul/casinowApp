@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Dashboard scrapping</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    
+   
+</head>
+<body>
+    <div class="main">
+    <!--Dashboard to test scrapping api -->
+    
+    
+    <!--Header -->
+    
+   {% include 'header.html' %}
+
+    <!--Url to image-->
+    
+    <div class="container">
+        
+        
+        <div class="container__left">
+            <h3>Get web page screenshot from Url</h3>
+            <form class="url2img__form" >
+                    <label for="url2img__url">Entrer l'url dont vous souhaitez le screenshot : </label>
+                    <input type="text" name="url2img__url" class="url2img__url" required/>
+                    <input type="submit" value="Get Screenshot">
+            </form>
+
+            <button class="url2img__save" style="margin-top:50px;">
+                Save Screenshot
+            </button>
+
+        </div>
+        
+        
+        <div class="container__right">
+
+            <img class="url2img__img" src="" style="display: none"/>
+            <div class="url2img__loader" style="display: none">
+                <div style="display : flex ; flex-direction: column; align-items: center;">
+                    <div class="loader"></div>
+                    Le chargement peut prendre un peu de temps
+                </div>
+            </div>
+
+            <p  class="url2img__failed" style="color : red; display : none">Request failed. Try again. Check the url</p>
+
+        </div>
+    </div>
+    
+
+    
+    <!--Footer-->
+    
+    {% include 'footer.html' %}
+    
+    </div>
+
+    <script src="{{ url_for('static',path='/url2imgScripts.js') }}"></script>
+
+</body>
+</html>
+
+<!-- add save button -->
