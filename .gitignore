@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/node_modules
+webscrappingservice/Include
+webscrappingservice/Lib
+webscrappingservice/scripts
+webscrappingservice/share
+webscrappingservice/app/utils/chromedriver/*
+webscrappingservice/app/utils/tesseract/*
+webscrappingservice/app/utils/east/frozen__east.pb
+mobileappserver/middlewares/auth.json
+websiteserver/config/fbServiceAccountKey.json
+
+**/__pycache__
+**/*.pyc
+**/.pnp
+**/.pnp.js
+**/.expo*
+
+# testing
+**/coverage
+
+# production
+**/build
+
+# misc
+**/.DS_Store
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env
+
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/logs*
+
+
+#vscode
+.vscode

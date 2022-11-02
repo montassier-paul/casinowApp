@@ -4,10 +4,9 @@ FROM python:3.10.8
 # 
 WORKDIR /code
 
-RUN apt-get update
-
-RUN apt-get -y install \ 
-    tesseract-ocr
+RUN apt-get update && apt-get install -y  \ 
+    tesseract-ocr \
+    iputils-ping
 
 RUN apt-get clean
 

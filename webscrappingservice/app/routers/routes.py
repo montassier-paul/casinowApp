@@ -42,21 +42,31 @@ options = webdriver.ChromeOptions()
 options.add_argument("--disable-popup-blocking")
 options.add_argument("--disable-notifications")
 options.add_argument('headless')
+options.add_argument('--ignore-ssl-errors=yes')
+options.add_argument('--ignore-certificate-errors')
 # driver = webdriver.Chrome(driver__path,chrome_options=options)
 
 # driver = webdriver.Remote("https://standalone-chrome-tnsbggprqa-od.a.run.app:4444", options=options)
+
+# driver = webdriver.Remote(
+# command_executor='http://localhost:4444/wd/hub',
+# options=options
+# )
 
 @router.get("/screenshot")
 async def get__screenshot(url):
     """return full page screenshot from url"""
     try :
         # driver = webdriver.Chrome(driver__path,chrome_options=options)
-        driver = webdriver.Remote("http://selenium:4444/wd/hub", options=options)
+        driver = webdriver.Remote(
+        command_executor='http://selenium:4444/wd/hub',
+        options=options
+        )
         # driver = webdriver.Remote("https://standalone-chrome-tnsbggprqa-od.a.run.app:4444/wd/hub", options=options)
         search__url(driver, url)
         screenshot = screenshot__page(driver)
         req__image = BytesIO()
-        screenshot.save(req__image, "JPEG")
+        screenshot.save(req__image, "JPEG") 
         req__image.seek(0)
 
 
@@ -69,8 +79,12 @@ async def get__screenshot(url):
         return  StreamingResponse(req__image, media_type="image/jpeg")
 
     finally : 
+        try :
+            driver.close()
+            driver.quit()
 
-        driver.close()
+        except : 
+            pass
 
 @router.get("/facebookproxy/{image__url:path}")
 async def get__facebookImage(request: Request, image__url : str):
@@ -110,7 +124,10 @@ async def post__jackpot(body : JackpotRequestBody):
     try : 
   
         # driver = webdriver.Chrome(driver__path,chrome_options=options)
-        driver = webdriver.Remote("http://selenium:4444/wd/hub", options=options)
+        driver = webdriver.Remote(
+        command_executor='http://selenium:4444/wd/hub',
+        options=options
+        )
         # driver = webdriver.Remote("https://standalone-chrome-tnsbggprqa-od.a.run.app:4444/wd/hub", options=options)
 
         print("   - Open driver : finished")
@@ -148,7 +165,12 @@ async def post__jackpot(body : JackpotRequestBody):
 
     finally : 
 
-        driver.close()
+        try :
+            driver.close()
+            driver.quit()
+
+        except : 
+            pass
 
 @router.post("/autojackpot")
 async def post__autojackpot(body: ListJackpotRequestBody):
@@ -161,7 +183,10 @@ async def post__autojackpot(body: ListJackpotRequestBody):
         # print(data)
   
         # driver = webdriver.Chrome(driver__path,chrome_options=options)
-        driver = webdriver.Remote("http://selenium:4444/wd/hub", options=options)
+        driver = webdriver.Remote(
+        command_executor='http://selenium:4444/wd/hub',
+        options=options
+        )
         # driver = webdriver.Remote("https://standalone-chrome-tnsbggprqa-od.a.run.app:4444/wd/hub", options=options)
 
         print("   - Open driver : finished")
@@ -210,15 +235,22 @@ async def post__autojackpot(body: ListJackpotRequestBody):
 
     finally : 
 
-        driver.close()
-        # a = 1
+        try :
+            driver.close()
+            driver.quit()
+
+        except : 
+            pass
 
 @router.get("/instajackpot")
 async def get__instaJackpot(feedName):
     """return intagram feed jackpot image"""
     try :
         # driver = webdriver.Chrome(driver__path,chrome_options=options)
-        driver = webdriver.Remote("http://selenium:4444/wd/hub", options=options)
+        driver = webdriver.Remote(
+        command_executor='http://selenium:4444/wd/hub',
+        options=options
+        )
         # driver = webdriver.Remote("https://standalone-chrome-tnsbggprqa-od.a.run.app:4444/wd/hub", options=options)
 
 
@@ -247,8 +279,12 @@ async def get__instaJackpot(feedName):
 
     finally : 
 
-        driver.close()
-        # print("finally")
+        try :
+            driver.close()
+            driver.quit()
+
+        except : 
+            pass
 
 @router.get("/home",  response_class=HTMLResponse)
 async def root(request : Request):
