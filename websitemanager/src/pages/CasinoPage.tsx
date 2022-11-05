@@ -13,7 +13,7 @@ import { auth } from "../firebase/firebase";
 import Loading from '../components/Loading'; 
 import xtype from 'xtypejs'
 import Modal from '../components/Modal'
-import CasinoDataScrapping from '../components/CasinoDataScrapping'
+import CasinoDatascraping from '../components/CasinoDatascraping'
 
 
 
@@ -199,7 +199,7 @@ function CasinoPage() {
           <CasinoGamesManagement data={{ casino: Casino }} functions={{ handleChange: handleNewGame, handleDeleteGame: handleDeleteGame }} />
           <CasinoImagesComponent data={{newImages : newImages, images : Casino.images}} functions = {{handleAddImage : handleAddImage, handleRemoveImage : handleRemoveImage}}/>
           <MessagesManagementComponent data={{deletedMessages : deletedMessages}} functions={{handleDeleteMessages : handleDeleteMessages}}/>
-          <CasinoDataScrapping/>
+          <CasinoDatascraping/>
           <div>
             <Button_DUC data={{ context: "delete" }} functions={{ handleOnClick: handleDeleteCasinoOnClick }} />
           </div>

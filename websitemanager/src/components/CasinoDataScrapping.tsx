@@ -1,12 +1,12 @@
 import React from 'react'
-import "./CasinoDataScrapping.css"
+import "./CasinoDatascraping.css"
 
-function CasinoDataScrapping() {
+function CasinoDatascraping() {
   return (
-    <div className='casinoDataScrapping'>
-        <h2>Manage data scrapping</h2>
+    <div className='casinoDatascraping'>
+        <h2>Manage data scraping</h2>
     </div>
   )
 }
 
-export default CasinoDataScrapping
+export default CasinoDatascraping

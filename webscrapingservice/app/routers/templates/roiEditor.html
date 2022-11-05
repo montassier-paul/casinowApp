@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Dashboard scraping</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+    
+
+   
+</head>
+<body>
+    <div class="main">
+    <!--Dashboard to test scraping api -->
+    
+    
+    <!--Header -->
+    
+   {% include 'header.html' %}
+
+  
+    <!--roi edit--> 
+    
+    <div class="container">
+        <div class="container__left">
+            <h3>Roi editor</h3>
+            <form>
+                <label for="roiEditor__input">Charger une image : </label>
+                <input type="file" class="roiEditor__input" name="roiEditor__input" accept="image/png, image/jpeg" required/>
+            </form>
+
+            <div class="roiEditor__positions">
+                <button class="roiEditor__clearButton">
+                    Clear
+                </button>
+                <p id="x_top">x-top : </p>
+                <p id="y_top">y-top : </p>
+                <p id="x_low">x-low : </p>
+                <p id="y_low">y-low : </p>
+
+            </div>
+
+            <button class="roiEditor__save" style="margin-top:50px;">
+                Save cropped image
+            </button>
+        </div>
+        
+        <div class="container__right" style="position: relative;">
+
+            <canvas class="roiEditor__canvasBackground" style="visibility: hidden;">
+                Désolé, votre navigateur ne prend pas en charge canvas. 
+            </canvas>
+
+            
+            <canvas class="roiEditor__canvasImage" style="position:absolute;left:0.5;top:0.5;">
+                Désolé, votre navigateur ne prend pas en charge canvas. 
+            </canvas>
+
+            <canvas class="roiEditor__canvasDraw"  style="position:absolute;left:0.5;top:0.5;">
+                Désolé, votre navigateur ne prend pas en charge canvas. 
+            </canvas>
+         
+        </div>
+    </div>
+       
+    
+    <!--Footer-->
+    
+    {% include 'footer.html' %}
+    
+    </div>
+
+    <script src="{{ url_for('static',path='/roiEditorScripts.js') }}"></script>
+</body>
+</html>
