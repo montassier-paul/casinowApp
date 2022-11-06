@@ -82,6 +82,14 @@ technologies :
 
 
 
+https://user-images.githubusercontent.com/99366674/200177949-0f2a91ed-cf0f-44fc-9cab-82f3edda3a81.mp4
+
+
+
+
+Uploading Dashboard scraping - Google Chrome 2022-11-06 15-36-50 (1).mp4…
+
+
 
 
 ## Scaper Service 
