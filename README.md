@@ -3,7 +3,7 @@
 
 
 
-Casinow project: 
+# Casinow project: 
 
 Scope : This project was carried out as part of the 3rd year entrepreneurship course at CentraleSupelec
 
@@ -12,5 +12,61 @@ Objective : The objective was to develop a complete software solution (mobile ap
 Translated with www.DeepL.com/Translator (free version)
 
 
+## App 
 
-app : https://expo.dev/@montassier/casinowApp?serviceType=classic&distribution=expo-go
+Purpose: app that provides the status of gambling establishments in real time.
+
+Features: 
+    * lists of games and updates of their status in real time
+    * lists of casinos with descriptions of their services
+    * search engine for casinos and games
+    * tutorial cards
+        
+Technologies : 
+  * front end app : react native
+  * backend : node js 
+  * real time connection : socket.io 
+  * sms alert system for interesting jackpots: twilio
+  * state management : redux
+
+app link : https://expo.dev/@montassier/casinowApp?serviceType=classic&distribution=expo-go
+
+app mockup : 
+
+
+
+
+
+
+## Website 
+
+
+
+
+
+
+## Website Manager 
+
+
+
+
+
+
+
+## Scaper Service 
+
+
+
+
+
+
+
+
+## Deployment 
+
+
+
+
+
+
+
