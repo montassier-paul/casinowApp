@@ -31,7 +31,7 @@ Technologies :
 
 app link : https://expo.dev/@montassier/casinowApp?serviceType=classic&distribution=expo-go
 
-app mockup : 
+https://user-images.githubusercontent.com/99366674/200180419-b2ffe4e5-db34-4345-8143-11d4b67c580c.mp4
 
 
 
