@@ -99,6 +99,11 @@ technologies :
 ## Deployment 
 
 
+technologies : 
+   * docker, kubernetes
+   * Google cloud : registery, cloud run, GKE (google kubernetes engine)
+
+
 
 
 
