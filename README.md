@@ -64,6 +64,8 @@ The site is fully manageable from the site casinow--manager.fr
 
 ## Website Manager 
 
+https://casinow--manager.fr/Login
+
 Manager of the casinow website. 
 
 features : 
@@ -79,20 +81,27 @@ technologies :
    * state management: Redux
    * Firestore to store image and firebase to manage authentification
 
-technologies : 
-
-
-
 
 
 
 
 ## Scaper Service 
 
+https://casinow--scraper.com/home
 
+automatic scraping of jackpots from machines displayed on gambling websites
 
+features : 
+   * screenshot of a web page
+   * AI to extract text from an image 
+   * retrieves all the last images with text from an instagram account
+   * image cropping
 
-
+technologies : 
+   * API : FastApi
+   * IA : pytesseract, easyOcr, East model 
+   * scraping with selenium
+   * javascript/html
 
 
 
