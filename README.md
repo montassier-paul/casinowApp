@@ -103,6 +103,12 @@ technologies :
    * javascript/html
 
 
+https://user-images.githubusercontent.com/99366674/200176901-ade0295a-79b4-43fa-9760-f8a91f7be4dd.mp4
+
+
+
+https://user-images.githubusercontent.com/99366674/200176905-22b338ad-129d-4b99-95be-37603da30cb2.mp4
+
 
 ## Deployment 
 
@@ -110,6 +116,9 @@ technologies :
 technologies : 
    * docker, kubernetes
    * Google cloud : registery, cloud run, GKE (google kubernetes engine)
+
+
+
 
 
 
