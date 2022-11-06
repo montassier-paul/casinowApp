@@ -81,13 +81,10 @@ technologies :
    * Firestore to store image and firebase to manage authentification
 
 
-https://user-images.githubusercontent.com/99366674/200178128-0f28b517-3708-47c9-bfc8-099178568484.mp4
-
-
-
-
 https://user-images.githubusercontent.com/99366674/200178134-50340168-70cc-499a-adf1-bb715631ab4c.mp4
 
+
+https://user-images.githubusercontent.com/99366674/200178352-87e8824a-deb2-4df4-a341-ae2800cba8fd.mp4
 
 
 
