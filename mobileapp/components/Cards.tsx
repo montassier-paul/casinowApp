@@ -18,7 +18,7 @@ export const TournamentCardById = ({ id }: { id: string }) => {
 
   async function getTournament() {
     try {
-      const response = await axios.get('https://casinow.herokuapp.com/api/tournaments/tournament/' + id);
+      const response = await axios.get('https://mobileapp--server-tnsbggprqa-ew.a.run.app/api/tournaments/tournament/' + id);
       return (response.data.data)
     }
     catch (error) {
@@ -56,7 +56,7 @@ export const EventCardById = ({ id }: { id: string }) => {
 
   async function getEvent() {
     try {
-      const response = await axios.get('https://casinow.herokuapp.com/api/evenements/evenement/' + id);
+      const response = await axios.get('https://mobileapp--server-tnsbggprqa-ew.a.run.app/api/evenements/evenement/' + id);
       return (response.data.data)
     }
     catch (error) {
@@ -96,7 +96,7 @@ export const TrendCardById = ({ id }: { id: string }) => {
 
   async function getTrend() {
     try {
-      const response = await axios.get('https://casinow.herokuapp.com/api/trends/trend/' + id);
+      const response = await axios.get('https://mobileapp--server-tnsbggprqa-ew.a.run.app/api/trends/trend/' + id);
       return (response.data.data)
     }
     catch (error) {
@@ -136,7 +136,7 @@ export const MachineCardById = ({ id }: { id: string }) => {
 
   async function getMachine() {
     try {
-      const response = await axios.get('https://casinow.herokuapp.com/api/machines/machine/' + id);
+      const response = await axios.get('https://mobileapp--server-tnsbggprqa-ew.a.run.app/api/machines/machine/' + id);
       return (response.data.data)
     }
     catch (error) {
@@ -183,7 +183,7 @@ export const TableCardById = ({ id }: { id: string }) => {
 
   async function getTable() {
     try {
-      const response = await axios.get('https://casinow.herokuapp.com/api/tables/table/' + id);
+      const response = await axios.get('https://mobileapp--server-tnsbggprqa-ew.a.run.app/api/tables/table/' + id);
       return (response.data.data)
     }
     catch (error) {

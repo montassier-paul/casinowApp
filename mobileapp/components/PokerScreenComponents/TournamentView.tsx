@@ -101,8 +101,7 @@ const TournamentView = ({ handleQuitClick, data }: propsTournamentView) => {
           ...(SearchData.CasinosSearchData?.groupes.includes(query)) ? { q_groupe: query } : null,
           ...(SearchData.CasinosSearchData?.departements.includes(query)) ? { q_departement: query } : null,
         }
-
-        const casinos = await axios.get('https://casinow.herokuapp.com/api/casinos/full/', { params: paramsCasinos });
+        const casinos = await axios.get('https://mobileapp--server-tnsbggprqa-ew.a.run.app/api/casinos/full/', { params: paramsCasinos });
         const casinosId = casinos.data.data.map((casino: propsCasino) => {
           return casino._id
         })
