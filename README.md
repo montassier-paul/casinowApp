@@ -9,7 +9,6 @@ Scope : This project was carried out as part of the 3rd year entrepreneurship co
 
 Objective : The objective was to develop a complete software solution (mobile application, website, server and deployment) to provide real time information on gambling establishments in France. The key element is to be able to have a real time connection with the establishments to transmit the jackpots of the live games and the state of the tables
 
-Translated with www.DeepL.com/Translator (free version)
 
 
 ## App 
