@@ -61,6 +61,10 @@ The site is fully manageable from the site casinow--manager.fr
 
 
 
+https://user-images.githubusercontent.com/99366674/200322348-ddfd1927-85df-49ce-91d0-a919059964c7.mp4
+
+
+
 ## Website Manager 
 
 https://casinow--manager.fr/Login
