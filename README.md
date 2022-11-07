@@ -51,7 +51,7 @@ feature :
 
 technologies :
 
-   * front-end : React Js 
+   * front-end : React Js , Typescript
    * Map : leaflet
    * backend : node Js
    * Database: mongoDb 
@@ -73,7 +73,7 @@ features :
    * editor to write game explanations 
 
 technologies : 
-   * front-end : React Js 
+   * front-end : React Js ,Typescript
    * Map : leaflet
    * backend : node Js
    * Database: mongoDb 
